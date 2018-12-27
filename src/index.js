@@ -1,9 +1,11 @@
 const endPoint = 'http://localhost:3000/notes';
-
 document.addEventListener('DOMContentLoaded', initPage);
 
 function initPage(){
+  const app = new App()
+  app.attachEventListeners()
   getNotes()
+  
 }
 
 function getNotes(){
@@ -11,14 +13,8 @@ function getNotes(){
     .then(res => res.json())
     .then(notes =>
       notes.forEach(note => {
-        const markup = `
-        <li>
-          <h3>${note.title}
-          <button>edit</button>
-          </h3>
-        </li>`;
-
-        document.querySelector('#notes-list').innerHTML += markup;
+        const newNote = new Note(note);
+        document.querySelector('#notes-list').innerHTML += newNote.renderListItem();
       })
     )
 }

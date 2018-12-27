@@ -2,15 +2,14 @@
   "notes": [
     {
       "id": "1",
-      "title": "Research for Blog Post",
-      "body":
-        "I don't really understand the way fetch handles bad requests (400 level status code), do research and provide example for blog post"
+      "title": "Research for My Blog Post",
+      "body": "I don't really understand the way fetch handles bad requests (400 level status code), do research and provide example for blog post",
+      "content": "undefined"
     },
     {
       "id": "2",
       "title": "Great idea for YA novel",
-      "body":
-        "Young Adult novel about a kid who's apartment is on the top floor of a functioning MegaBus"
+      "body": "Young Adult novel about a kid who's apartment is on the top floor of a functioning MegaBus"
     },
     {
       "id": "3",
@@ -20,8 +19,7 @@
     {
       "id": "4",
       "title": "More notes on fetch",
-      "body":
-        "Reminder that .then(res => res.json()) will fail if the response is not valid JSON (i.e it's an empty string)"
+      "body": "Reminder that .then(res => res.json()) will fail if the response is not valid JSON (i.e it's an empty string)"
     },
     {
       "id": "5",
