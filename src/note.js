@@ -6,6 +6,11 @@ class Note {
     Note.all.push(this);
   }
 
+  update({ title, content }) {
+    this.title = title;
+    this.content = content;
+  }
+
   renderListItem(){
     return `
     <li>
